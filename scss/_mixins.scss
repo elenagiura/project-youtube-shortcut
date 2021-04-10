@@ -1,0 +1,12 @@
+@mixin search-box() {
+	height: 30px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+@mixin video-link() {
+	float: left;
+	padding-right:10px;
+}

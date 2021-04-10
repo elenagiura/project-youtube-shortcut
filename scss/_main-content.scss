@@ -1,0 +1,56 @@
+main section {
+ 	margin:30px auto; 
+
+ 	>div {
+ 		display: none;
+
+ 		iframe, div {
+ 			float: left;
+			padding: 15px;
+ 		}
+ 	}
+
+ 	ul {
+ 		list-style-type: none;
+
+		li {
+		position:relative;
+			max-height: 190px;
+			overflow: hidden;
+			margin:15px 0;
+			padding: 10px;
+			background-color: $videoBackground;
+			border: solid 2px $headerBackgroundAndBorder;
+
+			a { 
+			position:relative;
+				height: 100%;
+				width: 100%;
+
+				img {
+					width:30%;
+					@include video-link();
+				}
+
+				div {
+					width:70%;
+					@include video-link();
+				}
+			}	
+		}
+ 	}
+}
+
+#video-info {
+ 	width:45%;
+	max-height: 315px;
+	overflow: auto;
+}
+
+.visible {
+	display:block;
+}
+
+.context-show {
+	overflow:auto;
+}

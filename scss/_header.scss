@@ -1,0 +1,28 @@
+header {
+	background-color: $headerBackgroundAndBorder;
+
+	section.wrapper {
+		padding-left: 0;
+	}
+
+	img {
+		float:left;
+	}
+
+	div {
+		float:right;
+		line-height: 100px;
+	}
+
+	input {
+	    @include search-box();
+		width: 300px;
+		margin-right: 10px;
+	}
+
+	button {
+		@include search-box();
+		background-color: $buttonCol;
+		color: $buttonTextCol;
+	}
+}

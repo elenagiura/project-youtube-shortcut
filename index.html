@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YouTube Shortcut</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<!--font-family: 'Roboto', sans-serif;-->
+
+		<link href="./css/main.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header>
+			<section class="wrapper clearfix">
+				<img src="./images/logo.jpg" rel="YouTube Logo">
+				<div class="search-box">
+					<input type="text" name="search" placeholder="Enter the term" />
+					<button>SEARCH</button>
+				</div>
+			</section>
+		</header>
+		<main>
+			<section class="wrapper">
+				<div class="clearfix">
+					<iframe id="video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div id="video-info"></div>
+				</div>
+				<ul></ul>
+			</section>
+		</main>
+		<script src="./js/main.js" type="text/javascript"></script>
+	</body>
+</html>
