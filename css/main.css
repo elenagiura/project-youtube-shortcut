@@ -44,6 +44,14 @@ header {
     background-color: #f60500;
     color: #fff; }
 
+@media all and (max-width: 620px) {
+  header div {
+    float: none;
+    line-height: 20px; }
+  header input, header button {
+    width: 100%;
+    margin: 10px;
+    margin-top: 0; } }
 main section {
   margin: 30px auto; }
   main section > div {
@@ -84,5 +92,45 @@ main section {
 
 .context-show {
   overflow: auto; }
+
+@media all and (max-width: 1100px) {
+  #video-info {
+    width: 100%;
+    max-height: 150px;
+    padding-top: 0; }
+
+  main section div iframe {
+    display: block;
+    margin: 0 auto; }
+
+  main section ul li {
+    max-height: 245px; }
+    main section ul li a div {
+      width: 60%; }
+      main section ul li a div h2 {
+        margin: 0; }
+
+  main section ul li a img {
+    width: 40%; } }
+@media all and (max-width: 620px) {
+  main section div iframe {
+    width: 100%; }
+
+  main section ul li {
+    max-height: 350px; }
+    main section ul li a div {
+      width: 100%; }
+      main section ul li a div h2 {
+        margin: 10px; }
+
+  main section ul li a img {
+    width: 50%; } }
+@media all and (max-width: 470px) {
+  main section div iframe {
+    height: 100%;
+    width: auto; }
+
+  main section ul li a img {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
